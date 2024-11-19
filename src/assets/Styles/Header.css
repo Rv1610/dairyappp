@@ -164,3 +164,11 @@
     transform: translateY(-11px) rotate(-45deg);
   }
 }
+
+@media (min-width: 10px) and (max-width: 380px) {
+
+  .hamburger-menu {
+    display: flex;
+    margin-right: 58px;
+}
+}
