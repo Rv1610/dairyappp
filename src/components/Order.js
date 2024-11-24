@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/Styles/ContactUs.css';
-import underConstructionLarge from '../assets/Images/UNDERCONSTRUCTIONIMG.png';
+import underConstructionLarge from '../assets/Images/underconstructionLarge1.png';
 import underConstructionSmall from '../assets/Images/underconstructionSmall.png';
 
 function Order() {
