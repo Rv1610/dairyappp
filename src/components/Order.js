@@ -3,7 +3,7 @@ import '../assets/Styles/ContactUs.css';
 import underConstructionLarge from '../assets/Images/UNDERCONSTRUCTIONIMG.png';
 import underConstructionSmall from '../assets/Images/underconstructionSmall.png';
 
-function ContactUs() {
+function Order() {
 
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
 
@@ -30,4 +30,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default Order;

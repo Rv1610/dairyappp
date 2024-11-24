@@ -1,0 +1,16 @@
+.contactUsDiv img{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    background-repeat: no-repeat;
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .contactUsDiv img{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,10 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import '../assets/Styles/ContactUs.css';
+import underConstructionLarge from '../assets/Images/UNDERCONSTRUCTIONIMG.png';
+import underConstructionSmall from '../assets/Images/underconstructionSmall.png';
 
 function Delivery() {
+
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth > 768);
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
   return (
-    <div>
-      <h1>Delivery Services</h1>
-      <p>We deliver fresh dairy products right to your doorstep. Learn more about our delivery services here. Ap per distance we charge something</p>
+    <div className='contactUsDiv'>
+      {/* <h1>Contact Us</h1>
+      <p>Feel free to reach out for any queries or feedback!</p> */}
+      <img
+          src={isLargeScreen ? underConstructionLarge : underConstructionSmall}
+          alt="UNDERCONSTRUCTION Banner"
+          loading="lazy"
+        />
     </div>
   );
 }
