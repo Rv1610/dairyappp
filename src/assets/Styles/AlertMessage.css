@@ -1,0 +1,130 @@
+.alert-message {
+  background-color: #ffc107; /* Bright yellow background */
+  color: #000; /* Black text for readability */
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100; /* Ensure it is above the Header */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  height: 80px; /* Set a consistent height */
+  width: 100%;
+}
+
+.alert-message-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.h55{
+  font-size: 16px;
+}
+
+ .pp {
+  margin-top: -10px;
+  flex: 1;
+  font-size: 16px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  border-radius: 0%;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: border-radius 0.1s ease-in-out;
+  align-content: center;
+  width: fit-content;
+}
+
+.close-button:hover {
+  background: none;
+  border: 1px solid black;
+  border-radius: 50%;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .alert-message {
+    background-color: #ffc107; /* Bright yellow background */
+    color: #000; /* Black text for readability */
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100; /* Ensure it is above the Header */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    height: 80px; /* Set a consistent height */
+    width: 90%;
+  }
+  
+  .alert-message-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+
+  .h55{
+    font-size: 11px;
+  }
+  
+   .pp {
+    margin-top: -10px;
+    flex: 1;
+    font-size: 11px;
+  }
+
+  .close-button {
+    width: 10%;
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: border 2.7s ease-in-out;
+    align-content: center;
+    margin-top: -60px;
+  }
+  
+  .close-button:hover {
+    background: none;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+}

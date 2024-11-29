@@ -3,7 +3,7 @@ import '../assets/Styles/ContactUs.css';
 import underConstructionLarge from '../assets/Images/underconstructionLarge1.png';
 import underConstructionSmall from '../assets/Images/underconstructionSmall.png';
 
-function Delivery() {
+function Delivery({alertVisible}) {
 
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
 
@@ -18,7 +18,7 @@ function Delivery() {
 
 
   return (
-    <div className='contactUsDiv'>
+    <div className={`contactUsDiv ${!alertVisible ? 'ne-alert' : ''}`}>
       {/* <h1>Contact Us</h1>
       <p>Feel free to reach out for any queries or feedback!</p> */}
       <img

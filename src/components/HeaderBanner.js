@@ -3,7 +3,7 @@ import '../assets/Styles/HeaderBanner.css';
 import largeImage from '../assets/Images/HeaderBanner.png';
 import smallImage from '../assets/Images/360x640.png';
 
-function HeaderBanner() {
+function HeaderBanner({alertVisible}) {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 768);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ function HeaderBanner() {
   };
 
   return (
-    <div className="header-banner-container">
+    <div className={`header-banner-container ${!alertVisible ? 'na-alert' : ''}`}>
       <div className="image-container">
         <img
           src={isLargeScreen ? largeImage : smallImage}

@@ -1,31 +1,27 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/Styles/Header.css';
-function Header() {
-
+function Header({ alertVisible }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  console.log(alertVisible); // Add this in Header.js to verify
 
 
   return (
-    <>
     <nav>
-      <div className="navbar-container">
-        <div className="logo">Ravi
-        </div>
-        
+      {/* Dynamically add 'no-alert' class */}
+      <div className={`navbar-container ${!alertVisible ? 'no-alert' : ''}`}>
+        <div className="logo">Ravi</div>
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <li>
-            <Link to="/"> 
-              Home
-            </Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/products">Product</Link> 
+            <Link to="/products">Product</Link>
           </li>
           <li>
             <Link to="/delivery">Delivery Services</Link>
@@ -33,9 +29,9 @@ function Header() {
           <li>
             <Link to="/contactus">Contact Us</Link>
           </li>
-            <button className="orderButton">
+          <button className="orderButton">
             <Link to="/order">Order Now</Link>
-            </button>
+          </button>
         </ul>
         <button
           className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`}
@@ -47,7 +43,6 @@ function Header() {
         </button>
       </div>
     </nav>
-    </>
   );
 }
 
