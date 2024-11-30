@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/Styles/Header.css';
+import dairyLogo from '../assets/Images/DairyLogo-Photoroom.png';
 function Header({ alertVisible }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,7 +16,9 @@ function Header({ alertVisible }) {
     <nav>
       {/* Dynamically add 'no-alert' class */}
       <div className={`navbar-container ${!alertVisible ? 'no-alert' : ''}`}>
-        <div className="logo">Ravi</div>
+        <div className="logo">
+          <img src={dairyLogo} alt="logo" />
+        </div>
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <li>
             <Link to="/">Home</Link>
