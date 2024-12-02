@@ -124,7 +124,7 @@
     justify-content: center;
     background-color: #364f63;
     position: relative;
-    top: 38px;
+    top: 80px;
     transition: top 0.3s ease-in-out;
   }
 
@@ -163,6 +163,7 @@
   .banner-subheading {
     font-size: 1.2rem;
     margin-bottom: 0;
+    margin-top: 0px;
   }
 
   .banner-tagline {
@@ -186,7 +187,7 @@
     justify-content: center;
     background-color: #364f63;
     position: relative;
-    top: 30px;
+    top: 100px;
     transition: top 0.3s ease-in-out;
   }
 
@@ -225,6 +226,7 @@
 
   .banner-subheading {
     font-size: 1.1rem;
+    margin-top: 0px;
     margin-bottom: 0;
   }
 

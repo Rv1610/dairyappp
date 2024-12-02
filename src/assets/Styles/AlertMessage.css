@@ -1,6 +1,6 @@
 .alert-message {
-  background-color: #ffc107; /* Bright yellow background */
-  color: #000; /* Black text for readability */
+  background: url('../Images/RepeatingPatterEmoji.png'); 
+  color: #000; 
   padding: 10px 20px;
   text-align: center;
   font-size: 16px;
@@ -9,14 +9,14 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1100; /* Ensure it is above the Header */
+  z-index: 1100; 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-items: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  height: 80px; /* Set a consistent height */
+  height: 80px; 
   width: 100%;
 }
 
@@ -64,9 +64,9 @@
 @media (max-width: 768px) {
 
   .alert-message {
-    background-color: #ffc107; /* Bright yellow background */
-    color: #000; /* Black text for readability */
-    padding: 10px 20px;
+    background: url('../Images/RepeatingPatterEmoji.png'); 
+    color: #000;
+    padding: 10px 0px;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
@@ -74,15 +74,15 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1100; /* Ensure it is above the Header */
+    z-index: 1100;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-items: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    height: 80px; /* Set a consistent height */
-    width: 90%;
+    height: 80px;
+    width: 100%;
   }
   
   .alert-message-container{
@@ -96,12 +96,15 @@
 
   .h55{
     font-size: 11px;
+    margin-top: 5px;
+    padding-left: 2px;
   }
   
    .pp {
     margin-top: -10px;
     flex: 1;
     font-size: 11px;
+    padding-left: 19px;
   }
 
   .close-button {
