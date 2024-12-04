@@ -1,0 +1,280 @@
+/* .alert-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 250px;
+    z-index: 800;
+}
+
+.alert-modal-background{
+    width: 36%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../Images/AlertModalbackground1.png');
+}
+
+.alert-modal-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* Overlay to block interactions outside the modal */
+.alert-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+  }
+  
+  .alert-modal-overlay.closing {
+    opacity: 0;
+  }
+  
+  /* Modal box with animations */
+  .alert-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    width: 36%;
+    height: 65vh;
+    animation: zoom-in 0.3s ease;
+  }
+  
+  .alert-modal.closing {
+    animation: zoom-out 0.3s ease;
+  }
+  
+  /* Background for modal container */
+  .alert-modal-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../Images/AlertModalbackground1.png');
+    width: 97%;
+    height: 97%;
+    border-radius: 5px;
+  }
+  
+  .alert-modal-container {
+    text-align: center;
+  }
+  
+  /* Button styling */
+  .close-modal-button {
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+  
+  .close-modal-button:hover {
+    background-color: #364f63;
+    color: #fff;
+  }
+  
+  /* Keyframes for zoom animations */
+  @keyframes zoom-in {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoom-out {
+    from {
+      transform: scale(1);
+      opacity: 1;
+    }
+    to {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+  }
+
+
+.exclusiveOffer{
+    font-size: 38px;
+}
+
+.modal-h2{
+    font-size: 20px;
+}
+
+.modal-areas{
+    font-size: 20px;
+}
+
+.modal-h4{
+    font-size: 17px;
+}
+
+.modal-h3{
+    font-size: 20px;
+}
+
+.close-modal-button{
+    margin-bottom: 40px;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 3px 20px;
+}
+
+.close-modal-button:hover{
+    background-color: #364f63;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+
+    .alert-modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transition: opacity 0.3s ease;
+      }
+      
+      .alert-modal-overlay.closing {
+        opacity: 0;
+      }
+      
+      /* Modal box with animations */
+      .alert-modal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-radius: 10px;
+        width: 80%;
+        height: 50vh;
+        animation: zoom-in 0.3s ease;
+      }
+      
+      .alert-modal.closing {
+        animation: zoom-out 0.3s ease;
+      }
+      
+      /* Background for modal container */
+      .alert-modal-background {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url('../Images/AlertModalbackground1.png');
+        width: 97%;
+        height: 97%;
+        border-radius: 5px;
+      }
+      
+      .alert-modal-container {
+        text-align: center;
+      }
+      
+      /* Button styling */
+      .close-modal-button {
+        margin-top: 20px;
+        font-size: 18px;
+        border-radius: 20px;
+        padding: 5px 20px;
+        cursor: pointer;
+      }
+      
+      .close-modal-button:hover {
+        background-color: #364f63;
+        color: #fff;
+      }
+      
+      /* Keyframes for zoom animations */
+      @keyframes zoom-in {
+        from {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes zoom-out {
+        from {
+          transform: scale(1);
+          opacity: 1;
+        }
+        to {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+      }
+
+    /* .alert-modal {
+        width: 100%;
+        height: 50vh;
+      } */
+
+    
+    .exclusiveOffer{
+        font-size: 20px;
+    }
+    
+    .modal-h2{
+        font-size: 12px;
+    }
+    
+    .modal-areas{
+        font-size: 12px;
+    }
+    
+    .modal-h4{
+        font-size: 10px;
+    }
+    
+    .modal-h3{
+        font-size: 12px;
+    }
+    
+    .close-modal-button{
+        margin-bottom: 0px;
+        font-size: 12px;
+        border-radius: 20px;
+        padding: 3px 10px;
+    }
+    
+    .close-modal-button:hover{
+        background-color: #364f63;
+        color: #fff;
+    }
+
+}

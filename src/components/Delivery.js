@@ -18,7 +18,7 @@ function Delivery({alertVisible}) {
 
 
   return (
-    <div className={`contactUsDiv ${!alertVisible ? 'ne-alert' : ''}`}>
+    <div className="contactUsDiv">
       {/* <h1>Contact Us</h1>
       <p>Feel free to reach out for any queries or feedback!</p> */}
       <img

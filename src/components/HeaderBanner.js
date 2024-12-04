@@ -20,7 +20,7 @@ function HeaderBanner({alertVisible}) {
   };
 
   return (
-    <div className={`header-banner-container ${!alertVisible ? 'na-alert' : ''}`}>
+    <div className="header-banner-container">
       <div className="image-container">
         <img
           src={isLargeScreen ? largeImage : smallImage}

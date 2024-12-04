@@ -5,12 +5,6 @@
   justify-content: center;
   background-color: #364f63;
   position: relative;
-  top: 100px;
-  transition: top 0.3s ease-in-out;
-}
-
-.header-banner-container.na-alert {
-  top: 0;
 }
 
 .image-container img {
