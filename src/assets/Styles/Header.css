@@ -107,6 +107,38 @@
 }
 
 
+
+/* General Styling */
+.header {
+  transition: transform 0.1s ease-in-out;
+}
+
+.header.visible {
+  transform: translateY(1);
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  display: none;
+  transition: transform 0.8s ease-in-out;
+}
+
+.bottom-nav.visible {
+  display: flex;
+  transform: translateY(1);
+}
+
+.bottom-nav.hidden {
+  transform: translateY(100%);
+}
+
+
+
+
 /* Mobile responsive styles */
 @media (min-width: 381px) and (max-width: 768px) {
 
@@ -137,7 +169,8 @@
   .logo img{
     width: 110px;
     height: 110px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    margin-left: 0;
   }
   
 
@@ -205,6 +238,46 @@
   }
 
   /* Display the bottom navigation */
+  /* .bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .bottom-nav a {
+    color: #364f63;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-nav a .fa-icon {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .bottom-nav a span {
+    font-size: 12px;
+  }
+
+  .bottom-nav a:hover {
+    color: #0066cc;
+  } */
+
+
+
   .bottom-nav {
     display: flex;
     position: fixed;
@@ -275,7 +348,8 @@
   .logo img{
     width: 110px;
     height: 110px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
+    margin-left: 0;
   }
 
 
@@ -342,6 +416,46 @@
   }
   
   /* Display the bottom navigation */
+  /* .bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .bottom-nav a {
+    color: #364f63;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-nav a .fa-icon {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .bottom-nav a span {
+    font-size: 12px;
+  }
+
+  .bottom-nav a:hover {
+    color: #0066cc;
+  } */
+
+
+
   .bottom-nav {
     display: flex;
     position: fixed;
